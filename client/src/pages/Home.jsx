@@ -2,15 +2,16 @@ import React from "react";
 import Form from "../components/Form";
 import { Link } from "react-router-dom";
 import features from "../data/features";
+import Testimonials from "../components/Testimonials";
 const Home = () => {
   return (
     <div className="bg-gray-50 text-gray-800">
-      {/* Hero Section */}
+    
      <section className="relative bg-cover bg-center text-white py-20 px-6 text-center">
-  {/* Overlay */}
+  
   <div className="absolute inset-0 bg-black opacity-50"></div>
 
-  {/* Content */}
+  
   <div className="relative z-10">
     <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow">
       Happiness Plans - Make Every Moment a Celebration
@@ -32,16 +33,16 @@ const Home = () => {
 
       {/* About Snapshot */}
       <section className="max-w-4xl mx-auto py-12 px-4 text-center">
-        <h2 className="text-3xl font-semibold mb-4">About Happiness Plans</h2>
+        <h2 className="text-3xl font-semibold mb-4 text-gray-800">About Happiness Plans</h2>
         <p className="text-gray-700 text-lg">
           Since 2021, <strong>Happiness Plans</strong> has been crafting seamless travel experiences and unforgettable events. Based in Indore, we specialize in holiday packages, air ticketing, destination weddings, corporate events, visa services, and adventure travel.
         </p>
       </section>
 
-      {/* Why Choose Us */}
+      
       <section className="bg-white py-12">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-semibold mb-8">Why Choose Us</h2>
+          <h2 className="text-3xl font-semibold mb-8 text-gray-800">Why Choose Us</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           { features.map(([title, desc]) => (
               <div
@@ -58,10 +59,12 @@ const Home = () => {
         </div>
       </section>
 
+      <Testimonials/>
+
       <Form/>
 
-      {/* Recognition */}
-      <section className="bg-gray-100 py-8 text-center">
+      
+      <section className="bg-gray-100 py-8 text-center my-5">
         <p className="text-gray-600">
           🎉 Proudly appreciated by brands like <strong>Yas Island Abu Dhabi</strong>
         </p>

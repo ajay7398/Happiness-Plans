@@ -6,7 +6,7 @@ import Form from "../components/Form";
 const Contact = () => (
   <section id="contact" className="py-16 bg-gray-50">
     <div className="max-w-4xl mx-auto px-4 text-center">
-      <h2 className="text-3xl font-semibold mb-4">Get in Touch with Us</h2>
+      <h2 className="text-3xl font-semibold mb-4 text-gray-800">Get in Touch with Us</h2>
       <p className="text-gray-700 mb-8">
         We’d love to plan your next event or adventure! Contact us or send a message below.
       </p>

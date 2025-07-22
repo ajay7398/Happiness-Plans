@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-
+import logo from "../assets/logo.png"
 function Header() {
   const [isMobile, setIsMobile] = useState(false);
 
   return (
-    <header className="bg-teal-600 text-white p-4 flex justify-between items-center relative">
+    <header className="bg-teal-600 text-white pr-4 flex justify-between items-center relative">
       <h1 className="text-2xl font-bold">
-        <Link to="/">Happiness Plans</Link>
+        <Link to="/"><img src={logo} className='w-[150px] h-[80px]'/></Link>
       </h1>
 
       {/* Desktop Nav */}
